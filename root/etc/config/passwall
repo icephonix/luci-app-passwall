@@ -22,7 +22,7 @@ config global_delay
 
 config global_forwarding
 	option udp_redir_ports '1:65535'
-	option tcp_redir_ports '80,443'
+	option tcp_redir_ports '1:65535'
 	option process '1'
 
 config global_proxy
@@ -31,7 +31,7 @@ config global_proxy
 	option socks5_proxy_port '1061'
 	option kcptun_port '11183'
 	option proxy_ipv6 '0'
-
+	
 config global_other
 	option use_tcping '1'
 	option auto_ping '1'
