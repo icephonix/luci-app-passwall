@@ -2,12 +2,11 @@ name: luci-app-passwall CI
 on:
   release:
     types: [published]
-  
   push:
-    branches: 
+    branches:
       - master
-
-      
+    paths:
+      - 'Makefile'
 jobs:
   build:
     runs-on: ubuntu-18.04
